@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Shahrvandsho' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Shahrvandsho
+pod 'ImageSlideshow', '~> 1.4'
+pod 'Alamofire', '~> 4.5'
+pod 'AlamofireImage', '~> 3.3'
+pod 'HKProgressHUD', '~> 0.8.0'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'Firebase/Core'
+pod 'SideMenu'
+pod 'OneSignal', '>= 2.5.2', '< 3.0'
+pod 'SkyFloatingLabelTextField', '~> 3.0'
+pod 'SearchTextField'
+end

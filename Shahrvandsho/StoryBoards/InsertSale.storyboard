@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1fF-cc-zHg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSANSMOBILE.TTF">
+            <string>IRANSansMobileFaNum-Light</string>
+        </array>
+        <array key="IRANSansMobile.ttf">
+            <string>IRANSansMobile</string>
+        </array>
+        <array key="IRANSansMobile_Bold.ttf">
+            <string>IRANSansMobile-Bold</string>
+        </array>
+        <array key="IRANSansMobile_Light.ttf">
+            <string>IRANSansMobile-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Insert Sale View Controller-->
+        <scene sceneID="Ztb-oR-V61">
+            <objects>
+                <viewController id="1fF-cc-zHg" customClass="InsertSaleViewController" customModule="ShahrVand" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Vo-pz-a8s"/>
+                        <viewControllerLayoutGuide type="bottom" id="uKM-Uv-IN7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="crB-0L-MzG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6m-UP-fXQ">
+                                <rect key="frame" x="0.0" y="-44" width="375" height="711"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpg-Cv-Jnw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عکس محصول" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga9-Dp-Qtd">
+                                                <rect key="frame" x="0.0" y="8" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="AUb-dS-gZB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Light" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ua7-TC-FzI">
+                                                <rect key="frame" x="47" y="62" width="100" height="100"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5K-d2-UuL" userLabel="Img1Btn">
+                                                <rect key="frame" x="267" y="62" width="100" height="100"/>
+                                                <connections>
+                                                    <action selector="selectCameraOrPhotoWithSender:" destination="1fF-cc-zHg" eventType="touchUpInside" id="AvL-vb-CQf"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qzH-ev-HIL">
+                                                <rect key="frame" x="157" y="62" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="A5F-kA-nuv"/>
+                                                    <constraint firstAttribute="width" constant="100" id="Ckn-cM-93E"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="77V-qw-gMZ">
+                                                <rect key="frame" x="267" y="62" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="7dU-Xb-pFz"/>
+                                                    <constraint firstAttribute="height" constant="100" id="k5d-F2-O0M"/>
+                                                </constraints>
+                                            </imageView>
+                                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OOZ-6k-GvG">
+                                                <rect key="frame" x="8" y="170" width="359" height="2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="PF0-UZ-4Xh"/>
+                                                </constraints>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="OOZ-6k-GvG" firstAttribute="leading" secondItem="Mpg-Cv-Jnw" secondAttribute="leading" constant="8" id="0Nv-fk-wes"/>
+                                            <constraint firstAttribute="height" constant="170" id="3CT-PC-eJr"/>
+                                            <constraint firstItem="r5K-d2-UuL" firstAttribute="centerY" secondItem="77V-qw-gMZ" secondAttribute="centerY" id="79B-at-GPn"/>
+                                            <constraint firstAttribute="trailing" secondItem="77V-qw-gMZ" secondAttribute="trailing" constant="8" id="AFA-1p-f9B"/>
+                                            <constraint firstItem="qzH-ev-HIL" firstAttribute="leading" secondItem="ua7-TC-FzI" secondAttribute="trailing" constant="10" id="ETc-WO-ggO"/>
+                                            <constraint firstItem="ua7-TC-FzI" firstAttribute="centerY" secondItem="qzH-ev-HIL" secondAttribute="centerY" id="FQz-L8-Um0"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ga9-Dp-Qtd" secondAttribute="trailing" id="Fb9-aU-eHJ"/>
+                                            <constraint firstItem="qzH-ev-HIL" firstAttribute="centerY" secondItem="77V-qw-gMZ" secondAttribute="centerY" id="Hd3-kp-v76"/>
+                                            <constraint firstItem="ua7-TC-FzI" firstAttribute="width" secondItem="qzH-ev-HIL" secondAttribute="width" id="IvR-zy-vHY"/>
+                                            <constraint firstItem="77V-qw-gMZ" firstAttribute="leading" secondItem="qzH-ev-HIL" secondAttribute="trailing" constant="10" id="Jfe-vs-Z0d"/>
+                                            <constraint firstAttribute="trailing" secondItem="OOZ-6k-GvG" secondAttribute="trailing" constant="8" id="JrD-jz-FZH"/>
+                                            <constraint firstItem="r5K-d2-UuL" firstAttribute="width" secondItem="77V-qw-gMZ" secondAttribute="width" id="Rub-ET-zjR"/>
+                                            <constraint firstItem="r5K-d2-UuL" firstAttribute="height" secondItem="77V-qw-gMZ" secondAttribute="height" id="SUM-em-NZi"/>
+                                            <constraint firstItem="r5K-d2-UuL" firstAttribute="centerX" secondItem="77V-qw-gMZ" secondAttribute="centerX" id="ScS-P8-aPa"/>
+                                            <constraint firstItem="Ga9-Dp-Qtd" firstAttribute="leading" secondItem="Mpg-Cv-Jnw" secondAttribute="leading" id="YDK-Rr-G7Q"/>
+                                            <constraint firstItem="OOZ-6k-GvG" firstAttribute="top" secondItem="qzH-ev-HIL" secondAttribute="bottom" constant="8" id="gFi-aK-8aH"/>
+                                            <constraint firstItem="ua7-TC-FzI" firstAttribute="height" secondItem="qzH-ev-HIL" secondAttribute="height" id="gLm-8O-eQS"/>
+                                            <constraint firstAttribute="bottom" secondItem="77V-qw-gMZ" secondAttribute="bottom" constant="8" id="kE2-z9-3rD"/>
+                                            <constraint firstItem="Ga9-Dp-Qtd" firstAttribute="top" secondItem="Mpg-Cv-Jnw" secondAttribute="top" constant="8" id="mcl-ur-7q2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZI-1h-Ozr">
+                                        <rect key="frame" x="0.0" y="170" width="375" height="364"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="توضیحات تخفیفی" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E5-cY-SwI">
+                                                <rect key="frame" x="0.0" y="16" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="dFz-FI-w0x"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile-Bold" family="IRANSansMobile" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاریخ پایان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iZ-BC-yQo">
+                                                <rect key="frame" x="302" y="148" width="65" height="20"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نام کالا" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q1-Xt-5zu">
+                                                <rect key="frame" x="323.5" y="68" width="43.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="درصد تخفیف" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVj-33-sGL">
+                                                <rect key="frame" x="287" y="188" width="80" height="20"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قیمت" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w77-8y-85N">
+                                                <rect key="frame" x="337" y="228" width="30" height="20"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاریخ شروع" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvp-ng-vhS">
+                                                <rect key="frame" x="297" y="108" width="70" height="20"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="تاریخ پایان" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2NO-jw-1vA">
+                                                <rect key="frame" x="30" y="138" width="249.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textFieldEditing:" destination="1fF-cc-zHg" eventType="editingDidBegin" id="bqI-Bl-dYY"/>
+                                                    <action selector="textFieldEndEditing:" destination="1fF-cc-zHg" eventType="editingDidEnd" id="Rf0-sZ-dee"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="درصد تخفیف" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qeI-Jz-lrf">
+                                                <rect key="frame" x="30" y="178" width="249" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <action selector="percentEndEditing:" destination="1fF-cc-zHg" eventType="editingDidEnd" id="I5x-Nk-cOL"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="قیمت" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oL3-8r-JLF">
+                                                <rect key="frame" x="30" y="218" width="250" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="تاریخ شروع" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYC-tT-cKT">
+                                                <rect key="frame" x="30" y="98" width="250" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="4C2-iA-8k0"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textFieldEditing:" destination="1fF-cc-zHg" eventType="editingDidBegin" id="5XR-0c-dd6"/>
+                                                    <action selector="textFieldEndEditing:" destination="1fF-cc-zHg" eventType="editingDidEnd" id="oFT-9p-kHb"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KGi-1K-Ghn">
+                                                <rect key="frame" x="30" y="58" width="249.5" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="zr0-1D-WPC"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksp-Yu-n0D">
+                                                <rect key="frame" x="138" y="264" width="100" height="40"/>
+                                                <color key="backgroundColor" red="0.3411764705882353" green="0.59607843137254901" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="HIP-EH-rjw"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="w0h-4j-jMg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile-Bold" family="IRANSansMobile" pointSize="17"/>
+                                                <state key="normal" title="ثبت">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitAddSaleBtn:" destination="1fF-cc-zHg" eventType="touchUpInside" id="9Hr-js-mwY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="5E5-cY-SwI" firstAttribute="top" secondItem="AZI-1h-Ozr" secondAttribute="top" constant="16" id="066-no-hLq"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5E5-cY-SwI" secondAttribute="trailing" id="20P-lG-2UE"/>
+                                            <constraint firstItem="fvp-ng-vhS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AZI-1h-Ozr" secondAttribute="leading" constant="20" symbolic="YES" id="5Ci-x4-rGd"/>
+                                            <constraint firstItem="2NO-jw-1vA" firstAttribute="centerX" secondItem="KGi-1K-Ghn" secondAttribute="centerX" id="64c-fA-Ou8"/>
+                                            <constraint firstItem="AVj-33-sGL" firstAttribute="trailing" secondItem="2Q1-Xt-5zu" secondAttribute="trailing" id="8DG-RE-SnM"/>
+                                            <constraint firstAttribute="height" constant="364" id="8eh-PX-bLV"/>
+                                            <constraint firstItem="w77-8y-85N" firstAttribute="trailing" secondItem="2Q1-Xt-5zu" secondAttribute="trailing" id="8g8-j5-f59"/>
+                                            <constraint firstItem="AVj-33-sGL" firstAttribute="bottom" secondItem="qeI-Jz-lrf" secondAttribute="bottom" id="GI5-YZ-la6"/>
+                                            <constraint firstItem="qeI-Jz-lrf" firstAttribute="centerX" secondItem="KGi-1K-Ghn" secondAttribute="centerX" id="IcI-3X-izA"/>
+                                            <constraint firstItem="oL3-8r-JLF" firstAttribute="leading" secondItem="bYC-tT-cKT" secondAttribute="leading" id="Lxv-Ca-zL1"/>
+                                            <constraint firstItem="fvp-ng-vhS" firstAttribute="bottom" secondItem="bYC-tT-cKT" secondAttribute="bottom" id="PdC-BT-Xpc"/>
+                                            <constraint firstItem="fvp-ng-vhS" firstAttribute="bottom" secondItem="bYC-tT-cKT" secondAttribute="bottom" id="Q7Q-Lo-OUX"/>
+                                            <constraint firstItem="9iZ-BC-yQo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AZI-1h-Ozr" secondAttribute="leading" constant="20" symbolic="YES" id="T9z-1J-rdF"/>
+                                            <constraint firstItem="2Q1-Xt-5zu" firstAttribute="bottom" secondItem="KGi-1K-Ghn" secondAttribute="bottom" id="UBG-cr-hOL"/>
+                                            <constraint firstItem="w77-8y-85N" firstAttribute="bottom" secondItem="oL3-8r-JLF" secondAttribute="bottom" id="Wl3-hJ-9fs"/>
+                                            <constraint firstItem="fvp-ng-vhS" firstAttribute="top" secondItem="2Q1-Xt-5zu" secondAttribute="bottom" constant="20" id="Wy8-yt-g3f"/>
+                                            <constraint firstItem="AVj-33-sGL" firstAttribute="leading" secondItem="qeI-Jz-lrf" secondAttribute="trailing" constant="8" id="Xxj-bR-fDy"/>
+                                            <constraint firstItem="Ksp-Yu-n0D" firstAttribute="top" secondItem="oL3-8r-JLF" secondAttribute="bottom" constant="16" id="YEn-pK-lEa"/>
+                                            <constraint firstItem="qeI-Jz-lrf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bYC-tT-cKT" secondAttribute="leading" id="Yhb-W9-oUL"/>
+                                            <constraint firstItem="Ksp-Yu-n0D" firstAttribute="centerX" secondItem="5E5-cY-SwI" secondAttribute="centerX" id="a40-Pg-Dy7"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Q1-Xt-5zu" secondAttribute="trailing" constant="8" id="aZC-HA-d05"/>
+                                            <constraint firstItem="oL3-8r-JLF" firstAttribute="centerX" secondItem="KGi-1K-Ghn" secondAttribute="centerX" id="d17-gr-pz1"/>
+                                            <constraint firstItem="5E5-cY-SwI" firstAttribute="centerX" secondItem="AZI-1h-Ozr" secondAttribute="centerX" id="dQu-gc-syT"/>
+                                            <constraint firstItem="AVj-33-sGL" firstAttribute="top" secondItem="9iZ-BC-yQo" secondAttribute="bottom" constant="20" id="diw-Ad-xeh"/>
+                                            <constraint firstItem="bYC-tT-cKT" firstAttribute="centerX" secondItem="KGi-1K-Ghn" secondAttribute="centerX" id="ew8-xD-YfA"/>
+                                            <constraint firstItem="2NO-jw-1vA" firstAttribute="leading" secondItem="bYC-tT-cKT" secondAttribute="leading" id="fSd-VS-vjT"/>
+                                            <constraint firstItem="9iZ-BC-yQo" firstAttribute="top" secondItem="fvp-ng-vhS" secondAttribute="bottom" constant="20" id="gZE-Zj-fHU"/>
+                                            <constraint firstItem="fvp-ng-vhS" firstAttribute="trailing" secondItem="2Q1-Xt-5zu" secondAttribute="trailing" id="hZA-QR-QvC"/>
+                                            <constraint firstItem="2Q1-Xt-5zu" firstAttribute="top" secondItem="5E5-cY-SwI" secondAttribute="bottom" constant="22" id="hf4-ux-PsW"/>
+                                            <constraint firstItem="5E5-cY-SwI" firstAttribute="leading" secondItem="AZI-1h-Ozr" secondAttribute="leading" id="kRg-Ku-y39"/>
+                                            <constraint firstItem="2Q1-Xt-5zu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AZI-1h-Ozr" secondAttribute="leading" constant="20" symbolic="YES" id="kks-4z-CCC"/>
+                                            <constraint firstItem="9iZ-BC-yQo" firstAttribute="bottom" secondItem="2NO-jw-1vA" secondAttribute="bottom" id="lNi-gU-2Jp"/>
+                                            <constraint firstItem="KGi-1K-Ghn" firstAttribute="leading" secondItem="bYC-tT-cKT" secondAttribute="leading" id="n56-yw-W1D"/>
+                                            <constraint firstItem="w77-8y-85N" firstAttribute="top" secondItem="AVj-33-sGL" secondAttribute="bottom" constant="20" id="ogy-WD-2Jw"/>
+                                            <constraint firstItem="w77-8y-85N" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AZI-1h-Ozr" secondAttribute="leading" constant="20" symbolic="YES" id="pmz-Bk-UY2"/>
+                                            <constraint firstItem="9iZ-BC-yQo" firstAttribute="trailing" secondItem="2Q1-Xt-5zu" secondAttribute="trailing" id="qyK-Xj-qmg"/>
+                                            <constraint firstItem="KGi-1K-Ghn" firstAttribute="leading" secondItem="AZI-1h-Ozr" secondAttribute="leading" constant="30" id="t2a-mc-P2I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mpg-Cv-Jnw" secondAttribute="trailing" id="79E-tU-lLM"/>
+                                    <constraint firstAttribute="bottom" secondItem="AZI-1h-Ozr" secondAttribute="bottom" constant="2" id="MfI-Q9-HkX"/>
+                                    <constraint firstItem="Mpg-Cv-Jnw" firstAttribute="leading" secondItem="d6m-UP-fXQ" secondAttribute="leading" id="UbZ-rz-xUV"/>
+                                    <constraint firstItem="AZI-1h-Ozr" firstAttribute="top" secondItem="Mpg-Cv-Jnw" secondAttribute="bottom" id="fss-Hs-2Ph"/>
+                                    <constraint firstItem="AZI-1h-Ozr" firstAttribute="leading" secondItem="d6m-UP-fXQ" secondAttribute="leading" id="mMe-fq-dRG"/>
+                                    <constraint firstItem="Mpg-Cv-Jnw" firstAttribute="centerX" secondItem="d6m-UP-fXQ" secondAttribute="centerX" id="pco-rf-8G8"/>
+                                    <constraint firstItem="Mpg-Cv-Jnw" firstAttribute="top" secondItem="d6m-UP-fXQ" secondAttribute="top" id="rCR-h6-Hbb">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="AZI-1h-Ozr" secondAttribute="trailing" id="uPC-mY-MhD"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d6m-UP-fXQ" firstAttribute="bottom" secondItem="uKM-Uv-IN7" secondAttribute="top" id="V2U-bM-lTu"/>
+                            <constraint firstItem="d6m-UP-fXQ" firstAttribute="leading" secondItem="crB-0L-MzG" secondAttribute="leading" id="WSg-eE-Tcf"/>
+                            <constraint firstItem="d6m-UP-fXQ" firstAttribute="top" secondItem="9Vo-pz-a8s" secondAttribute="bottom" constant="-64" id="lPM-1n-WLz"/>
+                            <constraint firstItem="d6m-UP-fXQ" firstAttribute="width" secondItem="crB-0L-MzG" secondAttribute="width" id="mxH-70-P6G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1by-44-kuf">
+                        <barButtonItem key="rightBarButtonItem" image="return" id="A8l-QO-NPw">
+                            <connections>
+                                <action selector="returnBtn:" destination="1fF-cc-zHg" id="nEz-WC-TK3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="beginDateTxtFld" destination="bYC-tT-cKT" id="CGi-Ge-Q4V"/>
+                        <outlet property="endDateTxtFld" destination="2NO-jw-1vA" id="0l1-gk-mO3"/>
+                        <outlet property="goodImg1" destination="77V-qw-gMZ" id="EYA-Y0-1Wc"/>
+                        <outlet property="goodImg2" destination="qzH-ev-HIL" id="AEs-wG-9U7"/>
+                        <outlet property="goodImg3" destination="ua7-TC-FzI" id="jZ8-SJ-0g8"/>
+                        <outlet property="goodNameTxtFld" destination="KGi-1K-Ghn" id="vgU-x4-CfY"/>
+                        <outlet property="infoLabel" destination="5E5-cY-SwI" id="51M-ep-bH1"/>
+                        <outlet property="offPercentTxtFld" destination="qeI-Jz-lrf" id="0ve-u9-oZL"/>
+                        <outlet property="picLabel" destination="Ga9-Dp-Qtd" id="5Y8-hw-bSc"/>
+                        <outlet property="priceTxtFld" destination="oL3-8r-JLF" id="d0H-do-l5F"/>
+                        <outlet property="scrollView" destination="d6m-UP-fXQ" id="ugQ-hR-RlN"/>
+                        <outlet property="submitButton" destination="Ksp-Yu-n0D" id="x0I-Xu-3vM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3md-aU-9lE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5450" y="2391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="300" height="300"/>
+        <image name="return" width="16" height="14"/>
+    </resources>
+</document>

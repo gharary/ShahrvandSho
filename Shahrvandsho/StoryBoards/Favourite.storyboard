@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSansMobile.ttf">
+            <string>IRANSansMobile</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="DDs-Sf-QVs">
+            <objects>
+                <tableViewController id="nce-gJ-ncN" customClass="FavouriteTableVC" customModule="ShahrVand" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0JZ-YC-fFO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavCell" rowHeight="100" id="PvS-4D-joS" customClass="FavouriteTableViewCell" customModule="ShahrVand" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PvS-4D-joS" id="Lqm-Ui-Pjr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rag-Lv-ZSa">
+                                            <rect key="frame" x="275" y="0.0" width="100" height="99.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="YI8-Vh-L5u"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rg7-Ay-y61">
+                                            <rect key="frame" x="16" y="8" width="251" height="83.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shopName" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVi-SS-ZtI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="251" height="33.5"/>
+                                                    <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                                    <color key="textColor" red="0.1137254902" green="0.57254901960000004" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shopLocation" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sje-qG-9Az">
+                                                    <rect key="frame" x="0.0" y="43.5" width="251" height="40"/>
+                                                    <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rg7-Ay-y61" firstAttribute="leading" secondItem="Lqm-Ui-Pjr" secondAttribute="leadingMargin" constant="8" id="7Qf-TG-lz0"/>
+                                        <constraint firstAttribute="trailing" secondItem="rag-Lv-ZSa" secondAttribute="trailing" id="8pt-u6-Jh8"/>
+                                        <constraint firstItem="rag-Lv-ZSa" firstAttribute="top" secondItem="Lqm-Ui-Pjr" secondAttribute="top" id="Fnz-7L-ZDV"/>
+                                        <constraint firstAttribute="bottom" secondItem="rag-Lv-ZSa" secondAttribute="bottom" id="GMg-vz-EO1"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="rg7-Ay-y61" secondAttribute="bottom" id="eJH-10-R4U"/>
+                                        <constraint firstItem="rag-Lv-ZSa" firstAttribute="leading" secondItem="rg7-Ay-y61" secondAttribute="trailing" constant="8" id="rjX-bw-cbr"/>
+                                        <constraint firstItem="rg7-Ay-y61" firstAttribute="top" secondItem="Lqm-Ui-Pjr" secondAttribute="topMargin" id="v5f-Yw-dfW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="shoLocation" destination="sje-qG-9Az" id="GPy-Lw-eG3"/>
+                                    <outlet property="shopImage" destination="rag-Lv-ZSa" id="fOB-0S-O01"/>
+                                    <outlet property="shopName" destination="oVi-SS-ZtI" id="P9C-yC-h0z"/>
+                                    <segue destination="WQP-0C-6hf" kind="show" identifier="shopDetail" id="MML-tA-eYQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nce-gJ-ncN" id="8zG-2Q-oZ1"/>
+                            <outlet property="delegate" destination="nce-gJ-ncN" id="a40-uB-a4G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="DIk-Rm-qWM">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="Tlj-dp-eLV">
+                            <connections>
+                                <action selector="backBtn:" destination="nce-gJ-ncN" id="er0-vj-J4i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tblDemo" destination="0JZ-YC-fFO" id="TPH-Nb-LRJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="goU-Z5-469" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="-317"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Bf-vU-21w">
+            <objects>
+                <navigationController storyboardIdentifier="FavouriteTableVC" id="PvZ-w7-j0b" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Zq-FG-YQI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nce-gJ-ncN" kind="relationship" relationship="rootViewController" id="tOv-Ue-tiy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="inn-YT-oDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338" y="-317"/>
+        </scene>
+        <!--ShopDetail-->
+        <scene sceneID="pKb-Df-oPb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="ShopDetail" id="WQP-0C-6hf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DeX-HZ-Tgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280" y="43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="12" height="23"/>
+    </resources>
+</document>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="clt-Nn-hpv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSansMobile_Bold.ttf">
+            <string>IRANSansMobile-Bold</string>
+        </array>
+        <array key="IRANSansMobile_Light.ttf">
+            <string>IRANSansMobile-Light</string>
+        </array>
+        <array key="IRANSansMobile_Medium.ttf">
+            <string>IRANSansMobile-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Admin Contact Info View Controller-->
+        <scene sceneID="PUL-3o-Ezi">
+            <objects>
+                <viewController id="clt-Nn-hpv" customClass="AdminContactInfoViewController" customModule="Shahrvandsho" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QNP-DB-3Qt"/>
+                        <viewControllerLayoutGuide type="bottom" id="WIw-BF-mnU"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="rf5-Go-piS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWb-Vi-VjI">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="آدرس :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIf-GE-hNu">
+                                        <rect key="frame" x="14" y="20" width="315" height="24"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Medium" family="IRANSansMobile" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="گلستان گرگان خیابان  ولیعصر..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vn1-8e-VAC">
+                                        <rect key="frame" x="14" y="52" width="315" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تلفن ثابت / همراه : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXr-es-csl">
+                                        <rect key="frame" x="14" y="92" width="315" height="24"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Medium" family="IRANSansMobile" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4p-GO-NGP">
+                                        <rect key="frame" x="14" y="124" width="315" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="۰۹۱۱۱۷۱****" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPx-Nr-zbp">
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="۰۱۷۳۲۵۲۲***" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6dG-hH-eXv">
+                                                <rect key="frame" x="157.5" y="0.0" width="157.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6dG-hH-eXv" firstAttribute="height" secondItem="aPx-Nr-zbp" secondAttribute="height" id="HaB-xF-Bcu"/>
+                                            <constraint firstItem="6dG-hH-eXv" firstAttribute="width" secondItem="aPx-Nr-zbp" secondAttribute="width" id="fTJ-CA-GIa"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نمابر : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6S-1o-0rH">
+                                        <rect key="frame" x="14" y="164" width="315" height="24"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Medium" family="IRANSansMobile" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="۰۱۷۳۲۵۳۳****" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W3C-6p-dCN">
+                                        <rect key="frame" x="14" y="196" width="315" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="www.shahrvandsho.ir" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gO1-ZX-oQP">
+                                        <rect key="frame" x="14" y="340" width="315" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@shahrvandsho.ir" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Xa-Lx-fFm">
+                                        <rect key="frame" x="14" y="268" width="315" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Light" family="IRANSansMobile" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ایمیل : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lh-UA-EdZ">
+                                        <rect key="frame" x="14" y="236" width="315" height="24"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Medium" family="IRANSansMobile" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxX-BX-0uR">
+                                        <rect key="frame" x="110" y="410" width="123" height="41"/>
+                                        <color key="backgroundColor" red="0.23417080709999999" green="0.64785055049999996" blue="0.43439180570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Bold" family="IRANSansMobile" pointSize="18"/>
+                                        <state key="normal" title="ثبت">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitChange:" destination="clt-Nn-hpv" eventType="touchUpInside" id="zcz-fR-i0U"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="وب سایت :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4w-Dh-DXE">
+                                        <rect key="frame" x="14" y="308" width="315" height="24"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile-Medium" family="IRANSansMobile" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oXr-es-csl" secondAttribute="trailing" constant="14" id="2km-X5-DHd"/>
+                                    <constraint firstItem="b4w-Dh-DXE" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="4UR-BD-WQx"/>
+                                    <constraint firstItem="vn1-8e-VAC" firstAttribute="top" secondItem="oIf-GE-hNu" secondAttribute="bottom" constant="8" id="6e8-Vo-yim"/>
+                                    <constraint firstItem="oIf-GE-hNu" firstAttribute="top" secondItem="qWb-Vi-VjI" secondAttribute="top" constant="20" id="7FX-TL-Cu0"/>
+                                    <constraint firstItem="oXr-es-csl" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="7bV-om-4Nb"/>
+                                    <constraint firstItem="oIf-GE-hNu" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="9EV-Er-mgY"/>
+                                    <constraint firstAttribute="trailing" secondItem="W3C-6p-dCN" secondAttribute="trailing" constant="14" id="CiJ-Pb-70U"/>
+                                    <constraint firstAttribute="trailing" secondItem="vn1-8e-VAC" secondAttribute="trailing" constant="14" id="D2O-Th-JcD"/>
+                                    <constraint firstAttribute="trailing" secondItem="SxX-BX-0uR" secondAttribute="trailing" constant="110" id="F0Y-UZ-muM"/>
+                                    <constraint firstItem="3Xa-Lx-fFm" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="FPp-RI-rZY"/>
+                                    <constraint firstItem="3Xa-Lx-fFm" firstAttribute="top" secondItem="0lh-UA-EdZ" secondAttribute="bottom" constant="8" id="Fsf-DP-1oD"/>
+                                    <constraint firstItem="oXr-es-csl" firstAttribute="top" secondItem="vn1-8e-VAC" secondAttribute="bottom" constant="10" id="J3w-IG-sMx"/>
+                                    <constraint firstAttribute="bottom" secondItem="SxX-BX-0uR" secondAttribute="bottom" constant="88" id="KPW-yn-7sG"/>
+                                    <constraint firstAttribute="trailing" secondItem="y4p-GO-NGP" secondAttribute="trailing" constant="14" id="NeA-JH-TwJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="oIf-GE-hNu" secondAttribute="trailing" constant="14" id="P8F-oi-PQX"/>
+                                    <constraint firstAttribute="trailing" secondItem="gO1-ZX-oQP" secondAttribute="trailing" constant="14" id="SEZ-YX-qPG"/>
+                                    <constraint firstItem="SxX-BX-0uR" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="110" id="UqJ-nt-oyY"/>
+                                    <constraint firstItem="gO1-ZX-oQP" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="Wlg-wN-vKa"/>
+                                    <constraint firstItem="W3C-6p-dCN" firstAttribute="top" secondItem="d6S-1o-0rH" secondAttribute="bottom" constant="8" id="Wui-08-28q"/>
+                                    <constraint firstAttribute="trailing" secondItem="b4w-Dh-DXE" secondAttribute="trailing" constant="14" id="Xxe-M9-sg2"/>
+                                    <constraint firstAttribute="trailing" secondItem="0lh-UA-EdZ" secondAttribute="trailing" constant="14" id="Zbj-op-hOn"/>
+                                    <constraint firstItem="gO1-ZX-oQP" firstAttribute="top" secondItem="b4w-Dh-DXE" secondAttribute="bottom" constant="8" id="b6x-bv-7ZH"/>
+                                    <constraint firstItem="b4w-Dh-DXE" firstAttribute="top" secondItem="3Xa-Lx-fFm" secondAttribute="bottom" constant="10" id="bma-rS-Sv1"/>
+                                    <constraint firstItem="y4p-GO-NGP" firstAttribute="top" secondItem="oXr-es-csl" secondAttribute="bottom" constant="8" id="c98-LW-DHH"/>
+                                    <constraint firstItem="0lh-UA-EdZ" firstAttribute="top" secondItem="W3C-6p-dCN" secondAttribute="bottom" constant="10" id="gq3-OZ-ysZ"/>
+                                    <constraint firstItem="d6S-1o-0rH" firstAttribute="top" secondItem="y4p-GO-NGP" secondAttribute="bottom" constant="10" id="i2k-ie-UUb"/>
+                                    <constraint firstItem="SxX-BX-0uR" firstAttribute="top" secondItem="gO1-ZX-oQP" secondAttribute="bottom" constant="40" id="nqj-hE-YSG"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Xa-Lx-fFm" secondAttribute="trailing" constant="14" id="qoI-Ce-NEn"/>
+                                    <constraint firstItem="d6S-1o-0rH" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="sjj-th-kT1"/>
+                                    <constraint firstItem="vn1-8e-VAC" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="uBq-7t-KTq"/>
+                                    <constraint firstAttribute="trailing" secondItem="d6S-1o-0rH" secondAttribute="trailing" constant="14" id="uRI-me-8Wm"/>
+                                    <constraint firstItem="W3C-6p-dCN" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="vWo-0F-KJW"/>
+                                    <constraint firstItem="0lh-UA-EdZ" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="w8A-e2-2Eb"/>
+                                    <constraint firstItem="y4p-GO-NGP" firstAttribute="leading" secondItem="qWb-Vi-VjI" secondAttribute="leading" constant="14" id="yBd-e1-hq6"/>
+                                    <constraint firstItem="SxX-BX-0uR" firstAttribute="centerX" secondItem="qWb-Vi-VjI" secondAttribute="centerX" id="z4Z-ql-DIx"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qWb-Vi-VjI" secondAttribute="trailing" id="8Hb-k8-JiT"/>
+                            <constraint firstItem="qWb-Vi-VjI" firstAttribute="top" secondItem="QNP-DB-3Qt" secondAttribute="bottom" id="MJQ-sX-FBZ"/>
+                            <constraint firstItem="qWb-Vi-VjI" firstAttribute="leading" secondItem="rf5-Go-piS" secondAttribute="leadingMargin" id="VXl-bs-Nrt"/>
+                            <constraint firstItem="WIw-BF-mnU" firstAttribute="top" secondItem="qWb-Vi-VjI" secondAttribute="bottom" id="yur-KY-wia"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b13-QX-Ezi">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="JaJ-MI-Xfu">
+                            <connections>
+                                <action selector="backButton:" destination="clt-Nn-hpv" id="nAo-7D-Chx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addressField" destination="vn1-8e-VAC" id="eYY-i9-SWp"/>
+                        <outlet property="emailField" destination="3Xa-Lx-fFm" id="Iuy-mF-2O5"/>
+                        <outlet property="faxField" destination="W3C-6p-dCN" id="D4i-oa-xUb"/>
+                        <outlet property="mobileField" destination="aPx-Nr-zbp" id="hjV-to-Kx4"/>
+                        <outlet property="phoneFiled" destination="6dG-hH-eXv" id="Pch-Q9-F0Q"/>
+                        <outlet property="scrollView" destination="qWb-Vi-VjI" id="guO-bZ-fRV"/>
+                        <outlet property="submitButton" destination="SxX-BX-0uR" id="ONc-cX-NTD"/>
+                        <outlet property="websiteField" destination="gO1-ZX-oQP" id="XZE-nn-ebP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1w0-sg-NyC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2711" y="1576"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="12" height="23"/>
+    </resources>
+</document>
